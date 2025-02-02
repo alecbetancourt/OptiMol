@@ -41,3 +41,43 @@ finalConformations = filterResults(conformerList)
 restraintEnergy = (restraint_angle-actual_angle)*force_constant
 restraintEnergy = absolute_value((30-100)*100) = 0
 restraintEnergy = absolute_value((30-100)*100) = 7000
+
+
+# def vector_from_points(point1, point2):
+  #  return np.array(point2) - np.array(point1)
+  #  print(point1)
+  #  print(point1.shape)
+  #  print(point2)
+  #  print(point2.shape)
+
+# def cross_product(vector1, vector2):
+  #  return np.cross(vector1, vector2)
+  #  print(vector1)
+  #  print(vector1.shape)
+  #  print(vector2)
+  #  print(vector2.shape)
+
+# def dot_product(vector1, vector2):
+  #  return np.dot(vector1, vector2)
+  #  print(vector1)
+  #  print(vector1.shape)
+
+# def dihedral_angle(point1, point2, point3, point4):
+  #  bond1 = vector_from_points(point1, point2)
+  #  bond2 = vector_from_points(point2, point3)
+  #  bond3 = vector_from_points(point3, point4)
+
+  #  normal1 = cross_product(bond1, bond2)
+  #  normal2 = cross_product(bond2, bond3)
+
+  #  normal1 /= np.linalg.norm(normal1)
+  #  normal2 /= np.linalg.norm(normal2)
+
+# 90 degree dihdral angle
+point1 = [0, 0, 0,]
+point2 = [1, 0, 0]
+point3 = [0, 1, 0]
+point4 = [0, 0, 1]
+
+angle = angle_of_dihedral(point1, point2, point3, point4)
+print(f"The dihedral angle is {angle:.2f} degrees")
