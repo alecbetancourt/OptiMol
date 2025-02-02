@@ -41,3 +41,30 @@ finalConformations = filterResults(conformerList)
 restraintEnergy = (restraint_angle-actual_angle)*force_constant
 restraintEnergy = absolute_value((30-100)*100) = 0
 restraintEnergy = absolute_value((30-100)*100) = 7000
+
+# 90 degree dihedral angle
+point1 = [0, 0, 0]
+point2 = [1, 0, 0]
+point3 = [0, 1, 0]
+point4 = [0, 0, 1]
+
+angle = angle_of_dihydral(point1, point2, point3, point4)
+print(f"The dihedral angle is {angle:.2f} degrees")
+
+# 45 degree dihedral angle
+p1 = [0, 0, 0]
+p2 = [1, 0, 0]
+p3 = [0, 1, 1]
+p4 = [1, 1, 0]
+
+angle = angle_of_dihedral(p1, p2, p3, p4)
+print(f"The dihedral angle is {angle:.2f} degrees")
+
+# 120 degree dihedral angle
+pt1 = [0, 0, 0]
+pt2 = [1, 0, 0]
+pt3 = [0, 2, 1]
+pt4 = [2, 2, 0]
+
+angle = angle_of_dihedral(pt1, pt2, pt3, pt4)
+print(f"The dihedral angle is {angle:.2f} degrees")
