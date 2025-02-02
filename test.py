@@ -41,5 +41,3 @@ finalConformations = filterResults(conformerList)
 restraintEnergy = (restraint_angle-actual_angle)*force_constant
 restraintEnergy = absolute_value((30-100)*100) = 0
 restraintEnergy = absolute_value((30-100)*100) = 7000
-
-
