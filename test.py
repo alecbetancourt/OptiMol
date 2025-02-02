@@ -41,3 +41,32 @@ finalConformations = filterResults(conformerList)
 restraintEnergy = (restraint_angle-actual_angle)*force_constant
 restraintEnergy = absolute_value((30-100)*100) = 0
 restraintEnergy = absolute_value((30-100)*100) = 7000
+
+
+import numpy as np
+
+def angle_of_dihedral(v1,v2,v3,v4):
+    
+    v1 = np.array(v1)
+    v2 = np.array(v2)
+    v3 = np.array(v3)
+    v4 = np.array(p4)
+    print(v1)
+    print(v1.shape)
+    print(v2)
+    print(v2.shape)
+    print(v3)
+    print(v3.shape)
+    print(v4)
+    print(v4.shape)
+
+    vector_v1 = v2 - v1
+    vector_v2 = v3 - v2
+    vector_v3 = v4 - v3
+
+    normalVector1 = np.cross(v1,v2)
+    normalVector2 = np.cross(v2,v3)
+    
+v1 = v1 / np.linalg.norm(v1)
+v2 = v2 / np.linalg.norm(v2)
+
